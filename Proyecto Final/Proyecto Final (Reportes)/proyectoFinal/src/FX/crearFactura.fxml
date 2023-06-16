@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="panelCrearFactura" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="324.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CrearFactura">
+   <children>
+      <Label fx:id="etiquetaCrearFactura" layoutX="243.0" layoutY="49.0" text="Crear Factura">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="etiquetaSKUProducto" layoutX="48.0" layoutY="105.0" text="SKU del producto: ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="etiquetaNombreCliente" layoutX="48.0" layoutY="138.0" text="Nombre del cliente: ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="etiquetaSKUFactura" layoutX="48.0" layoutY="174.0" text="SKU de la factura: ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="etiquetaFecha" layoutX="47.0" layoutY="206.0" text="Fecha de la factura: ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textoSKUProducto" layoutX="229.0" layoutY="105.0" prefHeight="27.0" prefWidth="316.0" promptText="Introduzca el SKU" />
+      <TextField fx:id="textoNombreCliente" layoutX="229.0" layoutY="138.0" prefHeight="27.0" prefWidth="316.0" promptText="Introduzca el nombre del cliente" />
+      <TextField fx:id="textoSKUFactura" layoutX="229.0" layoutY="174.0" prefHeight="27.0" prefWidth="316.0" promptText="Introduzca el SKU de la factura" />
+      <TextField fx:id="textoFecha" layoutX="229.0" layoutY="206.0" prefHeight="27.0" prefWidth="316.0" promptText="Introduzca la fecha" />
+      <Button fx:id="botonGuardar" layoutX="268.0" layoutY="252.0" mnemonicParsing="false" onAction="#guardar" text="Guardar" />
+   </children>
+</Pane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="panelModificarCliente" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ModificarCliente">
+   <children>
+      <Label fx:id="etiquetaModificarCliente" layoutX="211.0" layoutY="35.0" text="Modificar Cliente">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="etiquetaClientetoMod" layoutX="33.0" layoutY="94.0" text="Nombre del cliente a modificar:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="etiquetaDatos" layoutX="193.0" layoutY="180.0" text="Ingresar los nuevos datos">
+         <font>
+            <Font name="Arial Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="etiquetaNombre" layoutX="33.0" layoutY="220.0" text="Nombre:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="etiquetaEmail" layoutX="33.0" layoutY="256.0" text="Email:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="etiquetaTelefono" layoutX="33.0" layoutY="292.0" text="Teléfono:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textoClientetoMod" layoutX="262.0" layoutY="92.0" prefHeight="27.0" prefWidth="288.0" promptText="Cliente a modificar" />
+      <TextField fx:id="textoNombre" layoutX="131.0" layoutY="220.0" prefHeight="27.0" prefWidth="421.0" promptText="Ingrese el nombre" />
+      <TextField fx:id="textoEmail" layoutX="129.0" layoutY="256.0" prefHeight="27.0" prefWidth="421.0" promptText="Ingrese el email" />
+      <TextField fx:id="textoTelefono" layoutX="131.0" layoutY="292.0" prefHeight="27.0" prefWidth="421.0" promptText="Ingrese el teléfono" />
+      <Button fx:id="botonAceptar" layoutX="488.0" layoutY="129.0" mnemonicParsing="false" onAction="#opcionMenu" text="Aceptar" />
+      <Button fx:id="botonGuardar" layoutX="259.0" layoutY="339.0" mnemonicParsing="false" onAction="#modificar" text="Guardar" />
+      <TextField fx:id="textoAviso" layoutX="210.0" layoutY="129.0" />
+   </children>
+</Pane>

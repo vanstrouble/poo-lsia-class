@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="panelModificarVideojuego" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ModificarVideojuego">
+   <children>
+      <Label fx:id="etiquetaCrearVideojuego" layoutX="225.0" layoutY="43.0" text="Modificar Videojuego">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="etiquetaSKU" layoutX="62.0" layoutY="210.0" text="SKU:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="etiquetaNombre" layoutX="64.0" layoutY="242.0" text="Nombre: ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="etiquetaPrecio" layoutX="64.0" layoutY="273.0" text="Precio: ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="etiquetaPlataforma" layoutX="65.0" layoutY="304.0" text="Plataforma:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="etiquetaAnio" layoutX="64.0" layoutY="343.0" text="Año:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="etiquetaCompania" layoutX="67.0" layoutY="377.0" text="Compañía:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textoSKU" layoutX="154.0" layoutY="210.0" prefHeight="27.0" prefWidth="414.0" promptText="Digite el SKU" />
+      <TextField fx:id="textoNombre" layoutX="154.0" layoutY="242.0" prefHeight="27.0" prefWidth="414.0" promptText="Ingrese el nombre" />
+      <TextField fx:id="textoPrecio" layoutX="154.0" layoutY="273.0" prefHeight="27.0" prefWidth="414.0" promptText="Digite el precio" />
+      <TextField fx:id="textoPlataforma" layoutX="173.0" layoutY="304.0" prefHeight="27.0" prefWidth="395.0" promptText="Ingrese la plataforma" />
+      <TextField fx:id="textoAnio" layoutX="154.0" layoutY="343.0" prefHeight="27.0" prefWidth="414.0" promptText="Ingrese el año" />
+      <TextField fx:id="textoCompania" layoutX="173.0" layoutY="377.0" prefHeight="27.0" prefWidth="395.0" promptText="Ingrese la compañía" />
+      <Button fx:id="botonGuardar" layoutX="284.0" layoutY="430.0" mnemonicParsing="false" onAction="#guardar" text="Guardar" />
+      <Label fx:id="etiquetaSKUtoMod" layoutX="66.0" layoutY="90.0" text="SKU a modificar:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="etiquedaDatosNuevos" layoutX="220.0" layoutY="166.0" text="Ingrese los datos nuevos">
+         <font>
+            <Font name="Arial Italic" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textoSKUtoMod" layoutX="200.0" layoutY="88.0" prefHeight="27.0" prefWidth="363.0" promptText="Ingrese el SKU del videojuego a modificar" />
+      <TextField fx:id="textoAviso" layoutX="235.0" layoutY="126.0" />
+      <Button fx:id="botonAceptar" layoutX="476.0" layoutY="126.0" mnemonicParsing="false" onAction="#opcionMenu" text="Aceptar" />
+   </children>
+</Pane>

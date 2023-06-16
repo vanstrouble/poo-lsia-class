@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="panelModificarFactura" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ModificarFactura">
+   <children>
+      <Label fx:id="etiquetaModificarFactura" layoutX="209.0" layoutY="36.0" text="Modificar Factura">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="etiquetaSKUtoMod" layoutX="32.0" layoutY="88.0" text="SKU a modificar: ">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="stiquetaDatosNuevos" layoutX="32.0" layoutY="190.0" text="Ingrese los nuevos datos">
+         <font>
+            <Font name="Arial Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="etiquetaSKUFactura" layoutX="32.0" layoutY="236.0" text="SKU factura:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="etiquetaFecha" layoutX="32.0" layoutY="282.0" text="Fecha:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="etiquetaSKUProducto" layoutX="300.0" layoutY="236.0" text="SKU producto:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="etiquetaNombreCliente" layoutX="270.0" layoutY="282.0" text="Nombre cliente:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textoSKUtoMod" layoutX="161.0" layoutY="86.0" prefHeight="27.0" prefWidth="416.0" promptText="SKU de la factura a modificar" />
+      <TextField fx:id="textoAviso" layoutX="220.0" layoutY="127.0" />
+      <TextField fx:id="textoSKUFactura" layoutX="140.0" layoutY="236.0" prefHeight="27.0" prefWidth="147.0" promptText="SKU nuevo de la factura" />
+      <TextField fx:id="textoSKUProducto" layoutX="432.0" layoutY="236.0" prefHeight="27.0" prefWidth="147.0" promptText="SKU del producto" />
+      <TextField fx:id="textoFecha" layoutX="101.0" layoutY="282.0" prefHeight="27.0" prefWidth="140.0" promptText="Fecha de la factura" />
+      <TextField fx:id="textoNombreCliente" layoutX="419.0" layoutY="282.0" prefHeight="27.0" prefWidth="160.0" promptText="Nombre del cliente" />
+      <Button fx:id="botonGuardar" layoutX="273.0" layoutY="337.0" mnemonicParsing="false" onAction="#modificarFactura" text="Guardar" />
+      <Button fx:id="botonAceptar" layoutX="499.0" layoutY="127.0" mnemonicParsing="false" onAction="#opcionMenu" text="Aceptar" />
+   </children>
+</Pane>

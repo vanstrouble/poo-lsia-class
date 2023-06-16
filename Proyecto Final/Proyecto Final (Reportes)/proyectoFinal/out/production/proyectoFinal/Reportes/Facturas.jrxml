@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Facturas" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="fd4958b3-4d9a-457a-a06a-89db596aa112">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="Titulo" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="SKU Producto" class="java.lang.String"/>
+	<field name="Nombre del cliente" class="java.lang.String"/>
+	<field name="SKU Factura" class="java.lang.String"/>
+	<field name="Fecha Factura" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<textField>
+				<reportElement x="170" y="10" width="250" height="50" uuid="0e64298c-4b35-4fee-a257-bd842f1eec79"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{Titulo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="70" splitType="Stretch">
+			<staticText>
+				<reportElement x="-3" y="20" width="100" height="30" uuid="c874848d-6481-425f-855c-1669a42eeb27">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="51500b07-9e4a-44e8-9276-eb290f208aeb"/>
+				</reportElement>
+				<text><![CDATA[SKU Producto]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="20" width="210" height="30" uuid="12447ae3-dc59-473c-a6c0-d6455b814e47">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d0773235-518d-4594-826d-d7dded33fdd0"/>
+				</reportElement>
+				<text><![CDATA[Nombre del cliente]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="340" y="20" width="100" height="30" uuid="5ee7517f-6057-42b8-8ccb-ff89851cdebe">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cb8eeb73-4893-403b-af28-7e7a32c1d9f2"/>
+				</reportElement>
+				<text><![CDATA[SKU Factura]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="460" y="20" width="100" height="30" uuid="f5089db6-ffa2-4ab8-b2b2-4ac3593d6319">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="499db72c-d159-4d93-ba0f-0dc62db12510"/>
+				</reportElement>
+				<text><![CDATA[Fecha Factura]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="-10" y="20" width="100" height="30" uuid="cc1ae099-2a4a-4eea-88d4-a23290a0794a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="51500b07-9e4a-44e8-9276-eb290f208aeb"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{SKU Producto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="20" width="210" height="30" uuid="b7ee5585-9738-4940-a5a9-679f3adbfc79">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d0773235-518d-4594-826d-d7dded33fdd0"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Nombre del cliente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="340" y="20" width="100" height="30" uuid="8c01adfa-ad87-4fa7-9bfe-ce1e8eb63657">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cb8eeb73-4893-403b-af28-7e7a32c1d9f2"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{SKU Factura}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="20" width="100" height="30" uuid="6e4caa22-b15a-447c-9bd4-43005f0d92ab">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="499db72c-d159-4d93-ba0f-0dc62db12510"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Fecha Factura}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

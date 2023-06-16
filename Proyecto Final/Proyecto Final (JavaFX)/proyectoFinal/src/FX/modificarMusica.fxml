@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="panelModificarMusica" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ModificarMusica">
+   <children>
+      <Label fx:id="etiquetaModificarMusica" layoutX="242.0" layoutY="47.0" text="Modificar Música">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="etiquetaSKU" layoutX="47.0" layoutY="202.0" text="SKU:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="etiquetaNombre" layoutX="49.0" layoutY="234.0" text="Nombre: ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="etiquetaPrecio" layoutX="49.0" layoutY="265.0" text="Precio: ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="etiquetaFormato" layoutX="50.0" layoutY="296.0" text="Formato: ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="etiquetaCodigo" layoutX="47.0" layoutY="327.0" text="Artista">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="etiquetaAnio" layoutX="49.0" layoutY="361.0" text="Año:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="etiquetaActor" layoutX="48.0" layoutY="395.0" text="Track list:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textoSKU" layoutX="139.0" layoutY="202.0" prefHeight="27.0" prefWidth="414.0" promptText="Digite el SKU" />
+      <TextField fx:id="textoNombre" layoutX="139.0" layoutY="234.0" prefHeight="27.0" prefWidth="414.0" promptText="Ingrese el nombre" />
+      <TextField fx:id="textoPrecio" layoutX="139.0" layoutY="265.0" prefHeight="27.0" prefWidth="414.0" promptText="Digite el precio" />
+      <TextField fx:id="textoFormato" layoutX="139.0" layoutY="296.0" prefHeight="27.0" prefWidth="414.0" promptText="Ingrese el formato" />
+      <TextField fx:id="textoArtista" layoutX="139.0" layoutY="327.0" prefHeight="27.0" prefWidth="414.0" promptText="Ingrese el artista" />
+      <TextField fx:id="textoAnio" layoutX="139.0" layoutY="360.0" prefHeight="27.0" prefWidth="414.0" promptText="Ingrese el año" />
+      <TextField fx:id="textoTrackList" layoutX="139.0" layoutY="395.0" prefHeight="27.0" prefWidth="414.0" promptText="Ingrese el Track List" />
+      <Button fx:id="botonGuardar" layoutX="273.0" layoutY="442.0" mnemonicParsing="false" onAction="#guardar" text="Guardar" />
+      <Label fx:id="etiquetaSKUtoMod" layoutX="47.0" layoutY="93.0" text="SKU a modificar:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="etiquetaDatosNuevos" layoutX="209.0" layoutY="166.0" text="Ingrese los datos nuevos">
+         <font>
+            <Font name="Arial Italic" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textoSKUtoMod" layoutX="175.0" layoutY="91.0" prefHeight="27.0" prefWidth="380.0" promptText="Digite el SKU de la música que desea modificar" />
+      <TextField fx:id="textoAviso" layoutX="224.0" layoutY="122.0" />
+      <Button fx:id="botonAceptar" layoutX="465.0" layoutY="122.0" mnemonicParsing="false" onAction="#opcionMenu" text="Aceptar" />
+   </children>
+</Pane>
